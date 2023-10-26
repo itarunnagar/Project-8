@@ -19,6 +19,7 @@ body {
 .navigation {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-top: 10px;
 }
@@ -137,28 +138,40 @@ p span {
 /* Media Queries Start */
 /* Media Queries Start */
 @media (max-width: 900px) {
+  header {
+    box-shadow: 0px 0px 10px grey;
+    padding: 20px;
+  }
   .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 10px;
-    padding: 5px;
+    justify-content: space-between;
+    margin-top: 0px;
+    width: 100%;
+    max-height: 40px;
+    overflow-y: hidden;
   }
   .menuBar {
     display: block;
   }
   .utility {
-    display: none;
+    display: block;
+    width: 100%;
+  }
+  .utility li {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
   }
   .btn {
     display: flex;
     gap: 25px;
+    margin-top: 20px;
   }
   input {
-    display: none;
+    display: block;
+    padding-left: 20px;
   }
   button {
-    padding: 5px 20px;
+    padding: 7px 25px;
   }
 
   /* Here Main Section or Body Section Start */
